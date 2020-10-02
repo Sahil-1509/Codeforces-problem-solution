@@ -39,10 +39,9 @@ void solve()
     cin>>n>>x;
     n-=2;
     int cnt=1;
-    while(n>0)
+    if(n>0)
     {
-        cnt++;
-        n-=x;
+       cnt+=ceil((double)n/x);
     }
     cout<<cnt<<el;
 
