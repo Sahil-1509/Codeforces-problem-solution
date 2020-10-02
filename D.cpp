@@ -39,9 +39,10 @@ ll __gcd(ll a, ll b){if(a==0) return b; return __gcd(b%a, a);}
 
 void solve()
 {
-    ll n;
+   // we can take input in int
+    int n;
     cin>>n;
-    vll v(n);
+    vi v(n);
     For(i, 0, n)
     {
         cin>>v[i];
@@ -49,8 +50,8 @@ void solve()
 
         // v[i]=v[i]+v[i-1];
     }
-    ll cnt=0, pre=0;
-    set<ll> s;
+    int cnt=0, pre=0;
+    set<int> s;
     s.insert(0);
     For(i, 0, n)
     {
