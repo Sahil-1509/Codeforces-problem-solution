@@ -41,12 +41,12 @@ void solve()
 {
     int n, m;
     cin>>n>>m;
-    pii a, b;
+    int a,b,c,d;
     bool ist=false;
     For(i, 0, n)
     {
-        cin>>a.F>>a.S>>b.F>>b.S;
-        if(a.S==b.F)
+        cin>>a>>b>>c>>d;
+        if(b==c)
         ist=true;
     }
     if(!ist || m%2)
