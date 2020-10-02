@@ -39,9 +39,11 @@ ll __gcd(ll a, ll b){if(a==0) return b; return __gcd(b%a, a);}
 
 void solve()
 {
-    ll n;
+   //we can take input in int
+    int n;
     cin>>n;
-    ll c=ceil(sqrt(n));
+    //square  root of int can be taken in int
+    int c=ceil(sqrt(n));
 
     cout<<c-1+ceil((db)(n-c)/c)<<el;
 }
